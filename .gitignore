@@ -1,9 +1,9 @@
-# OS
+# OS system files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# IDEs & Editors
+# IDEs & Editor settings
 .vscode/
 .idea/
 *.sublime-*
@@ -11,28 +11,22 @@ desktop.ini
 *.bak
 *~
 
-# Python cache 
+# Python bytecode & virtual environments
 __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
 dist/
 build/
-.eggs/
-
-# venv
 venv/
 .venv/
 env/
 .env/
-.venv.previous/
 runtime-state.json
-.setup.lock
-ms-playwright/
 
-# Env
+# Secrets, API keys, and credentials
 .env
-.env.*
+.env*
 *.env
 **/.env
 **/client_secret*.json
@@ -48,9 +42,7 @@ id_rsa.*
 id_ed25519
 id_ed25519.*
 
-# Claude local config & scratch
-.claude/
-.config/
+# Local logs and temporary outputs
 tmp/
 output/
 outputs/

@@ -17,8 +17,6 @@ metadata:
 
 **Invocation:** `/seo $1 $2` where `$1` is the command and `$2` is the URL or argument.
 
-**Runtime:** Run bundled Python tools through `python scripts/<script.py>`.
-
 Comprehensive SEO analysis across all industries (SaaS, local services, e-commerce, publishers, agencies). Orchestrates 25 specialized sub-skills and 19 sub-agents covering technical SEO, structured data, content quality, local search, and AI-driven generative engine optimization (GEO).
 
 ## Quick Reference
@@ -58,13 +56,13 @@ Comprehensive SEO analysis across all industries (SaaS, local services, e-commer
 When the user invokes `/seo audit`, delegate to subagents in parallel:
 1. Detect business type (SaaS, local, ecommerce, publisher, agency, other)
 2. Spawn subagents: `seo-technical`, `seo-content`, `seo-schema`, `seo-sitemap`, `seo-performance`, `seo-visual`, `seo-geo`, `seo-agentic`
-3. If Google API credentials detected (`python scripts/google_auth.py --check`), also spawn `seo-google` agent
+3. If Google API credentials configured, also spawn `seo-google` agent
 4. If local business detected, also spawn `seo-local` agent
 5. If local business detected AND DataForSEO credentials available, also spawn `seo-maps` agent
 6. Spawn `seo-backlinks` agent for Common Crawl domain-level metrics, adding Moz and Bing data when configured
 7. If content strategy signals detected (blog, pillar pages, topic clusters), also spawn `seo-cluster` agent
 8. If e-commerce detected, also spawn `seo-ecommerce` agent
-9. If drift baseline exists for this URL (`python scripts/drift_history.py <url>`), also spawn `seo-drift` agent
+9. If drift baseline exists for this URL, also spawn `seo-drift` agent
 10. Always include `seo-sxo` in full audits (search experience applies to all sites)
 11. Collect results and generate unified report with SEO Health Score (0-100)
 12. Synthesize findings into Critical / High / Medium / Low action items with clear verification criteria

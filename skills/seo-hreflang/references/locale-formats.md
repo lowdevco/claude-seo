@@ -4,7 +4,6 @@ Load this reference when validating content parity or generating localized conte
 Mismatched formats (e.g., US date format on a German page) signal poor localization
 and reduce user trust.
 
-Original concept: Chris Muller (Pro Hub Challenge)
 
 ## Number Formats
 
