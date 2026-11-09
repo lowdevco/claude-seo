@@ -51,34 +51,34 @@ Load prompt files on demand, only for the stage the user requests.
 3. Ask: which stage matches the user's current situation?
 
 ### On `/seo flow find [url|topic]`
-1. Read all files in `references/prompts/find/`
+1. Read all files in `references/prompts-library.md`
 2. Apply each prompt to the URL or topic
 3. Cross-reference: "For deeper SERP clustering, see `/seo cluster <seed-keyword>`"
 
 ### On `/seo flow leverage [url]`
-1. Read the file in `references/prompts/leverage/`
+1. Read the file in `references/prompts-library.md`
 2. Apply to the URL's current backlink context
 3. Cross-reference: "For raw backlink data, see `/seo backlinks <url>`"
 
 ### On `/seo flow optimize [url]`
-1. Read all file names in `references/prompts/optimize/`
+1. Read all file names in `references/prompts-library.md`
 2. Read prior analysis context (URL, industry vertical, any prior skill output in conversation)
 3. Select 2-3 most relevant prompts; load only those files
 4. Apply selected prompts; note the others are accessible via `/seo flow prompts`
 5. Cross-reference: "For full content quality analysis, see `/seo content <url>` and `/seo geo <url>`"
 
 ### On `/seo flow win [url]`
-1. Read all files in `references/prompts/win/`
+1. Read all files in `references/prompts-library.md`
 2. Apply each prompt to the URL's conversion and BOFU context
 3. Cross-reference: "For SXO persona scoring, see `/seo sxo <url>`"
 
 ### On `/seo flow local [url]`
-1. Read all files in `references/prompts/local/`
+1. Read all files in `references/prompts-library.md`
 2. Apply to the URL's local SEO context
 3. Cross-reference: "For full local SEO analysis, see `/seo local <url>` and `/seo maps [command]`"
 
 ### On `/seo flow prompts`
-1. Read `references/prompts/README.md`
+1. Read `references/prompts-library.md.md`
 2. Display the full index: all 41 prompts with stage, name, trigger conditions
 
 ### On `/seo flow sync`
@@ -105,12 +105,12 @@ Always surface exactly 2-3 prompts. State which prompts you chose and why.
 Load on-demand, do NOT load all at startup:
 - `references/flow-framework.md`: FLOW operating model (load on every `/seo flow` activation)
 - `references/bibliography.md`: Evidence sources; load when citing studies or statistics
-- `references/prompts/README.md`: Prompt index; load for `/seo flow prompts`
-- `references/prompts/find/`: 5 prompts; load for `/seo flow find`
-- `references/prompts/leverage/`: 1 prompt; load for `/seo flow leverage`
-- `references/prompts/optimize/`: 21 prompts; load selectively for `/seo flow optimize`
-- `references/prompts/win/`: 3 prompts; load for `/seo flow win`
-- `references/prompts/local/`: 11 prompts; load for `/seo flow local`
+- `references/prompts-library.md.md`: Prompt index; load for `/seo flow prompts`
+- `references/prompts-library.md`: 5 prompts; load for `/seo flow find`
+- `references/prompts-library.md`: 1 prompt; load for `/seo flow leverage`
+- `references/prompts-library.md`: 21 prompts; load selectively for `/seo flow optimize`
+- `references/prompts-library.md`: 3 prompts; load for `/seo flow win`
+- `references/prompts-library.md`: 11 prompts; load for `/seo flow local`
 
 ---
 
